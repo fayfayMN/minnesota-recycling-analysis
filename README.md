@@ -2,7 +2,9 @@
 
 > **MIS 380 — Business Intelligence & Analytics | Section 1 | Spring 2026**  
 > Feifei Li · Michelle Nguyen · Patrick M. Sanchez
-> Presentation - [https://mnscu-my.sharepoint.com/:p:/r/personal/qv7121xp_go_minnstate_edu/_layouts/15/Doc.aspx?sourcedoc=%7BA4C5DC92-5DDF-478B-A7BF-C27605DD9E46%7D&file=MIS%20380%2C%20Section%201%20-%20SAP%20Presentation%203.pptx&action=edit&mobileredirect=true&wdExp=TEAMS-TREATMENT&web=1](url)
+> 
+> **Presentation:**
+>  [https://mnscu-my.sharepoint.com/:p:/r/personal/qv7121xp_go_minnstate_edu/_layouts/15/Doc.aspx?sourcedoc=%7BA4C5DC92-5DDF-478B-A7BF-C27605DD9E46%7D&file=MIS%20380%2C%20Section%201%20-%20SAP%20Presentation%203.pptx&action=edit&mobileredirect=true&wdExp=TEAMS-TREATMENT&web=1](url)
 ---
 
 ## Overview
@@ -158,7 +160,12 @@ python mn_recycling_analysis.py
 3. **Net income calculation** — Derived as: `Total Revenue (SCORE + Local + Other) − Total Expenditure (all 7 categories)`.
 4. **Dataset merge (Q4)** — Inner join on `Year + County` between Expenditure and Waste Management datasets produced 304 matched county-year records covering 2014–2017.
 5. **EPA methodology note** — The EPA changed food waste measurement in 2018, causing the national rate to drop from 35.2% to 32.1%. Analysis uses 2017 as the final comparison year.
-
+   
+---
+## Data Visualization 
+1. ** SAP Predictive Analysis software** - as part of visualization tools in this project
+2.  ** Python notebook** - used for statistics findings and questions 6
+   
 ---
 
 ## References
