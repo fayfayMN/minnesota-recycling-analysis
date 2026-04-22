@@ -45,12 +45,13 @@ National recycling rates from the [EPA Facts and Figures on Municipal Solid Wast
 ```
 minnesota-recycling-analysis/
 │
-├── data/                                 # Raw data files (not tracked in Git)
+├── data/                                 
 │   ├── Waste Management by Method.xlsx
 │   ├── Recycling by category.xlsx
 │   └── Expenditure and Revenue.xlsx
+│   └── External data source for Q6
 │
-├── outputs/                              # Generated charts and cleaned CSVs
+├── outputs/                            
 │   ├── q1_waste_methods.png
 │   ├── q2_heatmap.png
 │   ├── q3_expenditure.png
@@ -59,14 +60,8 @@ minnesota-recycling-analysis/
 │   ├── q6_chart1_trend.png
 │   ├── q6_chart2_materials.png
 │   ├── q6_chart3_longterm.png
-│   ├── waste.csv
-│   ├── rec.csv
-│   └── exp.csv
-│
+│  
 ├── Minnesota_Recycling_Analysis.ipynb    # Main analysis notebook (Python)
-├── mn_recycling_analysis.py              # Standalone Python script
-├── mn_recycling_analysis.R               # R version of the analysis
-├── Minnesota_Recycling_Results.md        # Written results and interpretations
 ├── .gitignore
 └── README.md
 ```
