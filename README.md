@@ -2,7 +2,7 @@
 
 > **MIS 380 — Business Intelligence & Analytics | Section 1 | Spring 2026**  
 > Feifei Li · Michelle Nguyen · Patrick M. Sanchez
-
+> Presentation - [https://mnscu-my.sharepoint.com/:p:/r/personal/qv7121xp_go_minnstate_edu/_layouts/15/Doc.aspx?sourcedoc=%7BA4C5DC92-5DDF-478B-A7BF-C27605DD9E46%7D&file=MIS%20380%2C%20Section%201%20-%20SAP%20Presentation%203.pptx&action=edit&mobileredirect=true&wdExp=TEAMS-TREATMENT&web=1](url)
 ---
 
 ## Overview
@@ -37,7 +37,6 @@ All datasets were provided by the **Minnesota Pollution Control Agency (MPCA)** 
 **External data source for Q6:**  
 National recycling rates from the [EPA Facts and Figures on Municipal Solid Waste](https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/national-overview-facts-and-figures-materials) — covers 1960–2018.
 
-> ⚠️ The raw `.xlsx` files are **not included** in this repository due to file size. Download them from the course D2L portal and place them in the `/data` folder before running the notebook.
 
 ---
 
@@ -82,7 +81,7 @@ Make sure you have the following installed:
 
 - Python 3.8+
 - Jupyter Notebook or JupyterLab
-- R 4.0+ *(optional — for the R version only)*
+- SAP Predictive Analysis software
 
 ### Python Dependencies
 
@@ -101,12 +100,6 @@ pip install matplotlib      # Base plotting
 pip install seaborn         # Statistical visualizations
 pip install scipy           # Statistical tests (ANOVA, correlation)
 pip install openpyxl        # Reading Excel files
-```
-
-### R Dependencies *(optional)*
-
-```r
-install.packages(c("ggplot2", "dplyr", "tidyr", "scales", "readxl"))
 ```
 
 ---
@@ -136,16 +129,7 @@ jupyter notebook
 python mn_recycling_analysis.py
 ```
 
-### Option 3 — R Script
 
-The R script requires CSV versions of the datasets. Generate them first by running the Python loading step, then:
-
-```r
-# Open mn_recycling_analysis.R in RStudio
-# Update file paths at the top of the script
-# Run all — charts will be saved to the working directory
-source("mn_recycling_analysis.R")
-```
 
 ---
 
@@ -196,7 +180,6 @@ source("mn_recycling_analysis.R")
 This project used AI tools as part of the analysis workflow:
 
 - **ChatGPT** — Baseline research and initial question framing
-- **Claude (Anthropic)** — Code generation, chart design, statistical interpretation, and documentation
 
 All AI-generated content was cross-referenced against the primary MPCA datasets and course materials by the authors to verify accuracy and eliminate hallucinations.
 
