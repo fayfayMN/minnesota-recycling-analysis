@@ -1,0 +1,78 @@
+---
+title: "Analytics Group Project"
+author: "Feifei Li"
+date: "2026-04-13"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## libarary
+```{r}
+library(readr)
+library(tidyverse)
+```
+
+# Exploring the datasets
+```{r}
+summary(Recycling_by_category)
+head(Recycling_by_category)
+
+```
+# Check for missing values
+```{r}
+sum(is.na(Recycling_by_category)) # Total count of missing values in the whole dataset
+colSums(is.na(Recycling_by_category)) # Count of missing values per column
+```
+#Visualization
+```{r}
+hist(Recycling_by_category$`Res Tons`)
+hist(Recycling_by_category$`Total Tons`)
+hist(Recycling_by_category$`CII Tons`)
+```
+##
+
+```{r}
+summary(Waste_Management_by_Method)
+head(Waste_Management_by_Method)
+```
+# 
+
+```{r}
+sum(is.na(Waste_Management_by_Method)) # Total count of missing values in the whole dataset
+colSums(is.na(Waste_Management_by_Method)) # Count of missing values per column
+```
+# Q1: Are there any different recycling patterns between counties for each type of waste 
+(organics, WTE, landfilled etc.) based on the waste management by method data? Are the patterns 
+consistent for different types of wastes?
+```{r}
+
+# 1. Load your data
+df <- read_excel("C:/Users/faith/OneDrive/Documents/Metro/MIS 380/Jin Simon/Final Project/Waste Management by Method.xlsx")
+df
+
+# 2. Calculate percentages to normalize the data
+# This ensures we are comparing patterns, not just county size
+df_pct <- df %>%
+  mutate(Total = Recycling + Organics + Onsite + WTE + Landfilled) %>%
+  mutate(across(c(Recycling, Organics, Onsite, WTE, Landfilled), ~ . / Total)) %>%
+  select(County, Year, Recycling, Organics, Onsite, WTE, Landfilled)
+
+# 3. Pivot the data to "Long" format for ggplot
+df_long <- df_pct %>%
+  pivot_longer(cols = c(Recycling, Organics, Onsite, WTE, Landfilled), 
+               names_to = "Method", 
+               values_to = "Percentage")
+
+# 4. Create the Boxplot
+ggplot(df_long, aes(x = Method, y = Percentage, fill = Method)) +
+  geom_boxplot(outlier.colour = "red", outlier.shape = 1) +
+  labs(title = "Distribution of Waste Management Methods Across Counties",
+       y = "Proportion of Total Waste",
+       x = "Management Method") +
+  theme_minimal() +
+  scale_y_continuous(labels = scales::percent)
+```
+
