@@ -4,7 +4,7 @@
 > Feifei Li · Michelle Nguyen · Patrick M. Sanchez
 > 
 > **Presentation:**
->  [https://mnscu-my.sharepoint.com/:p:/r/personal/qv7121xp_go_minnstate_edu/_layouts/15/Doc.aspx?sourcedoc=%7BA4C5DC92-5DDF-478B-A7BF-C27605DD9E46%7D&file=MIS%20380%2C%20Section%201%20-%20SAP%20Presentation%203.pptx&action=edit&mobileredirect=true&wdExp=TEAMS-TREATMENT&web=1](url)
+>(https://mnscu-my.sharepoint.com/:p:/r/personal/qv7121xp_go_minnstate_edu/_layouts/15/Doc.aspx?sourcedoc=%7BA4C5DC92-5DDF-478B-A7BF-C27605DD9E46%7D&file=MIS%20380%2C%20Section%201%20-%20SAP%20Presentation%203.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1&wdOrigin=POWERPOINTONLINE.SHELL%2CAPPHOME-WEB.JUMPBACKIN&wdPreviousSession=d56cb804-9d94-41c2-a22f-7fb8c22af638&wdPreviousSessionSrc=AppHomeWeb&ct=1776807796349&previoussessionid=e63bb1f6-14ef-a3c6-d210-3c7ccf974166&nav=eyJzSWQiOjMxOSwiY0lkIjoyOTI4MzUxNjk0fQ&isSPOFile=1&ovuser=5011c7c6-0ab4-46ab-9ef4-fae74a921a7f%2Cqv7121xp%40go.minnstate.edu&wdExp=TEAMS-TREATMENT&web=1&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNjAzMTIyMzAyMCJ9)
 ---
 
 ## Overview
